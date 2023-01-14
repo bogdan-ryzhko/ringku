@@ -3,7 +3,6 @@ import HeroPayment from "./HeroPayment";
 import HeroUserData from "./HeroUserData";
 
 const Hero = ({ props, payment } ) => {
-	console.log(payment)
 	return (
 		<section className="section hero__section">
 			<div className="container">

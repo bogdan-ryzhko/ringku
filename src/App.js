@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CreateWallet from './components/CreateWallet';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import TaskList from './components/TaskList';
@@ -35,6 +36,7 @@ function App() {
       <Header items={headerItems} />
       <Hero props={heroUserData} payment={heroPayment} />
       <TaskList tasks={tasks} />
+      <CreateWallet/>
     </div>
   );
 }
