@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import AsideMenu from './components/AsideMenu';
-import CreateWallet from './components/CreateWallet';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import TaskList from './components/TaskList';
+import AsideMenu from './components/aside/AsideMenu';
+import CreateWallet from './components/create-wallet/CreateWallet';
+import Header from './components/haeder/Header';
+import Hero from './components/hero/Hero';
+import TaskList from './components/tasks/TaskList';
 
 import "./styles/main.scss"
 
