@@ -3,3 +3,16 @@
 @import "./base/_base";
 @import "./styles-components/header";
 @import "./styles-components/_tasks";
+@import "./styles-components/hero";
+
+.App {
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    padding-bottom: 82px;
+  }
+}

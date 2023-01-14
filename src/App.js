@@ -1,10 +1,25 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
+import Hero from './components/Hero';
 import TaskList from './components/TaskList';
 
 import "./styles/main.scss"
 
 function App() {
+
+  const [headerItems, setHeaderItems] = useState([
+    {src: './images/header-img/header-item-1.svg', alt: 'mobile-version', id: 1},
+    {src: './images/header-img/header-item-2.svg', alt: 'expand to full screen', id: 2},
+  ]);
+
+  const [heroUserData, setHeroUserData] = useState([
+    {name: "Adrian", amountCash: 124.543, id: 1}
+  ]);
+
+  const [heroPayment, setHeroPayment] = useState([
+    {src: './images/hero-img/hero-send-payment.svg', description: "Send a payment", id: 1},
+    {src: './images/hero-img/hero-request-payment.svg', description: "Request a payment", id: 2},
+  ]);
 
   const [tasks, setTasks] = useState([
     { src: './images/tasks-img/task-img-1.svg' ,title: 'Emergency fund', description: "Last Paid on August 28, 2022", countCash: 300, maxCash: 1000, id: 1, },
@@ -15,14 +30,10 @@ function App() {
     { src: './images/tasks-img/task-img-6.svg' ,title: 'Donation', description: "Last Paid on August 20, 2022", countCash: 200, maxCash: 1000, id: 6, },
   ]);
 
-  const [headerItems, setHeaderItems] = useState([
-    {src: './images/header-img/header-item-1.svg', alt: 'mobile-version', id: 1},
-    {src: './images/header-img/header-item-2.svg', alt: 'expand to full screen', id: 2},
-  ]);
-
   return (
     <div className="App">
       <Header items={headerItems} />
+      <Hero props={heroUserData} payment={heroPayment} />
       <TaskList tasks={tasks} />
     </div>
   );
