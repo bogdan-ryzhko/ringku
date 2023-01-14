@@ -1,0 +1,61 @@
+@import "../utils/_vars";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(40 / 32);
+  color: $color-title;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: calc(32 / 24);
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  color: $main-color;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 100px) {
+    max-width: 1200px;
+  }
+}
