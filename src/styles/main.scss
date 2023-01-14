@@ -5,15 +5,9 @@
 @import "./styles-components/_tasks";
 @import "./styles-components/hero";
 @import "./styles-components/create-wallet";
+@import "./styles-components/aside-menu";
 
 .App {
-  padding-bottom: 20px;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 40px;
-  }
-
-  @media screen and (min-width: 1000px) {
-    padding-bottom: 82px;
-  }
+  position: relative;
+  display: flex;
 }

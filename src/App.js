@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AsideMenu from './components/AsideMenu';
 import CreateWallet from './components/CreateWallet';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -7,6 +8,17 @@ import TaskList from './components/TaskList';
 import "./styles/main.scss"
 
 function App() {
+
+  const [asideItems, setAsideItems] = useState([
+    {menuItem: 'My Wallet', path: '', id: 1},
+    {menuItem: 'My Card', path: '', id: 2},
+    {menuItem: 'Finance Chart', path: '', id: 3},
+    {menuItem: 'Recent Transactions', path: '', id: 4},
+  ]);
+
+  const [userInfo, setUserInfo] = useState([
+    {name: 'Adrian', lastName: 'Tra', avatar: './images/aside-icons/avatar.png', id: 1}
+  ]);
 
   const [headerItems, setHeaderItems] = useState([
     {src: './images/header-img/header-item-1.svg', alt: 'mobile-version', id: 1},
@@ -33,10 +45,15 @@ function App() {
 
   return (
     <div className="App">
-      <Header items={headerItems} />
-      <Hero props={heroUserData} payment={heroPayment} />
-      <TaskList tasks={tasks} />
-      <CreateWallet/>
+      <div className="App-wrapper">
+        <AsideMenu menuList={asideItems} userInfo={userInfo} />
+      </div>
+      <div className="App-wrapper">
+        <Header items={headerItems} />
+        <Hero props={heroUserData} payment={heroPayment} />
+        <TaskList tasks={tasks} />
+        <CreateWallet />
+        </div>
     </div>
   );
 }

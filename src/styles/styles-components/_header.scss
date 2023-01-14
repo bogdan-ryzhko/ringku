@@ -9,14 +9,34 @@
     justify-content: space-between;
     min-height: 65px;
   }
+
+  &__menu-btn {
+    background-color: $brand-color;
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .items__wrapper {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+
+  @media screen and (min-width: 1200px) {
+    width: 80px;
+  }
 }
 
 .header-item {
-  &__img + &__img {
-    margin-left: 34px;
+  &__img:first-child {
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
   }
 }
