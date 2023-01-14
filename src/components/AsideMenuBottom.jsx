@@ -2,7 +2,6 @@ import React from "react";
 import AsideMenuAvatar from "./AsideMenuAvatar";
 
 const AsideMenuBottom = ({userInfo}) => {
-	console.log(userInfo)
 	return (
 		<div className="aside-menu__bottom">
 			<div className="aside-menu__settings">

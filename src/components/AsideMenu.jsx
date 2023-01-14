@@ -4,7 +4,6 @@ import AsideMenuList from "./AsideMenuList";
 import AsideMenuLogo from "./AsideMenuLogo";
 
 const AsideMenu = ({menuList, userInfo}) => {
-	console.log(userInfo)
 	return (
 		<aside className="aside-menu">
 			<div className="aside-menu__inner">

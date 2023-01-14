@@ -11,7 +11,9 @@ const AsideMenuLogo = () => {
 				<img src="../images/aside-icons/logo.svg" alt="Logo" />
 				Ringku
 			</a>
-			<button onClick={handleButton} className="aside-logo__btn-mobile">x</button>
+			<button onClick={handleButton} className="aside-logo__btn-mobile">
+				<img src="../images/aside-icons/btn-close.svg" alt="Button close" />
+			</button>
 			<button className="aside-logo__btn">
 				<img src="../images/aside-icons/menu-btn.svg" alt="" />
 			</button>

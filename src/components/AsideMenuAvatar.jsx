@@ -1,7 +1,6 @@
 import React from "react";
 
 const AsideMenuAvatar = ({ userInfo }) => {
-	console.log(userInfo)
 	return (
 		<div className="avatar__inner">
 			<button className="avatar__img">
