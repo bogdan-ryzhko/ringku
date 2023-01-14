@@ -1,0 +1,22 @@
+.header {
+  min-width: 100%;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 36px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 65px;
+  }
+}
+
+.items__wrapper {
+  display: flex;
+}
+
+.header-item {
+  &__img + &__img {
+    margin-left: 34px;
+  }
+}
