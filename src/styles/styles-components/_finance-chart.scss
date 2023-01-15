@@ -1,0 +1,89 @@
+.finance-banner {
+  margin-bottom: 24px;
+}
+
+.banner__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f8fd;
+  border: 1px solid #4f46e5;
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+  border-radius: 6px;
+  padding: 12px 24px;
+}
+
+.banner-info__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.banner__image {
+  margin-right: 20px;
+}
+
+.banner__descr {
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  color: $brand-color;
+  margin-right: 15px;
+}
+
+.banner__btn {
+  border: 1px solid #e2e8f0;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  padding: 8px 16px;
+  border-radius: 40px;
+  white-space: nowrap;
+}
+
+.income__inner-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.income-info {
+  display: flex;
+  gap: 12px;
+}
+
+.income-info__list {
+  border: 1px solid #e2e8f0;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 6px 12px;
+}
+
+.finance-info__list {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.finance-info__item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 6px;
+  flex-basis: calc(100% / 2 - 40px);
+}
+
+.finance-info__item-img {
+  margin-right: 18px;
+}

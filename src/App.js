@@ -19,8 +19,9 @@ function App() {
       <div className="App">
         <AsideMenu />
         <Header items={headerItems} />
-        <MyWallet/>
+        {/* <MyWallet/> */}
         {/* <MyCard/> */}
+        <FinanceChart />
       </div>
     </div>
   )
