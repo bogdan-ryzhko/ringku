@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import CardHero from "./cardHero/CardHero";
 import CardInformation from "./card/CardInformation";
 
@@ -6,8 +6,10 @@ const MyCard = () => {
 
 	return (
 		<main className="page">
-			<CardHero />
-			<CardInformation/>
+			<section className="card__section">
+				<CardHero />
+				<CardInformation/>
+			</section>
 		</main>
 	)
 }

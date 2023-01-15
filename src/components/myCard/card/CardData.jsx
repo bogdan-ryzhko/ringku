@@ -1,7 +1,6 @@
 import React from "react";
 
 const CardData = ({userCardData}) => {
-	console.log(userCardData);
 	function showCVV() {
 		const cvv = document.querySelector('.card-info__cvv');
 		cvv.classList.toggle('visible');

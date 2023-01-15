@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { React, useState } from 'react';
 import MyCard from './components/myCard/MyCard';
 import MyWallet from './components/myWallet/MyWallet';
 import FinanceChart from './components/financeChart/FinanceChart';
@@ -19,8 +19,8 @@ function App() {
       <div className="App">
         <AsideMenu />
         <Header items={headerItems} />
-        {/* <MyWallet/> */}
-        <MyCard/>
+        <MyWallet/>
+        {/* <MyCard/> */}
       </div>
     </div>
   )

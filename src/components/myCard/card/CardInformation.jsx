@@ -11,15 +11,15 @@ const CardInformation = () => {
 	]);
 
 	const [supportList, setSupportList] = useState([
-		{question: 'Check Your Cash Flow', answer: 'lorem ipsum dolor'},
-		{question: 'Change Primary Card', answer: 'lorem ipsum dolor'},
-		{question: 'Pay Tax', answer: 'lorem ipsum dolor'},
-		{question: 'Make Invoice', answer: 'lorem ipsum dolor'},
-		{question: 'Refer a Friend', answer: 'lorem ipsum dolor'},
+		{question: 'Check Your Cash Flow', answer: 'lorem ipsum dolor', id: 1},
+		{question: 'Change Primary Card', answer: 'lorem ipsum dolor', id: 2},
+		{question: 'Pay Tax', answer: 'lorem ipsum dolor', id: 3},
+		{question: 'Make Invoice', answer: 'lorem ipsum dolor', id: 4},
+		{question: 'Refer a Friend', answer: 'lorem ipsum dolor', id: 5},
 	]);
 
 	return (
-		<section className="section card__info">
+		<div className="section card__info">
 			<div className="container">
 				<div className="card-info__inner">
 					<Card cardList={cardList} />
@@ -28,7 +28,7 @@ const CardInformation = () => {
 					<CardSupport supportList={supportList} />
 				</div>
 			</div>
-		</section>
+		</div>
 		
 	)
 }

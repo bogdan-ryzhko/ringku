@@ -36,9 +36,22 @@
 
 .page {
   padding-top: 36px;
+  min-width: 100%;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    padding-bottom: 82px;
+  }
 
   @media screen and (min-width: 1200px) {
     grid-column: 2/3;
     grid-row: 2/3;
   }
+}
+
+.section {
 }
