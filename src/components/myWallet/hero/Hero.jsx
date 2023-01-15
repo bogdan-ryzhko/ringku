@@ -7,7 +7,7 @@ const Hero = ({ props, payment } ) => {
 		<section className="section hero__section">
 			<div className="container">
 				<div className="hero__inner">
-					<h1 className="hero__title title-js">My Wallet</h1>
+					<h1 className="hero__title">My Wallet</h1>
 					<p className="hero__subtitle">Keep track your financial plan</p>
 					<ul className="hero__list">
 						{props.map(prop => <HeroUserData props={prop} key={prop.id} />)}

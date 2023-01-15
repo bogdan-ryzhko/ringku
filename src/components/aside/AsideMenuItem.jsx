@@ -1,6 +1,6 @@
 import React from "react";
 
-const AsideMenuItem = ({menuList}) => {
+const AsideMenuItem = ({ menuList }) => {
 	return (
 		<li className="aside-menu__item">
 			<a href={menuList.path} className="aside-menu__link">

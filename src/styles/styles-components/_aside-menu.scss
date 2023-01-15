@@ -106,6 +106,10 @@
   }
 }
 
+.aside-logo__btn-mobile.active .aside-menu {
+  left: -50%;
+}
+
 .aside-logo__btn {
   display: flex;
   justify-content: center;
