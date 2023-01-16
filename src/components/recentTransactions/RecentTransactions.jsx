@@ -5,10 +5,8 @@ import RecentTransactionsHistory from "./recentTransactionsHistory/RecentTransac
 const RecentTransactions = () => {
 	return (
 		<main className="page">
-			<div className="container">
 				<RecentHero />
 				<RecentTransactionsHistory/>
-			</div>
 		</main>
 	)
 }
