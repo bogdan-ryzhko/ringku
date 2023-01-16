@@ -14,4 +14,4 @@ const MyCard = () => {
 	)
 }
 
-export default MyCard;
+export {MyCard};

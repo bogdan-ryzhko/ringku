@@ -11,4 +11,4 @@ const RecentTransactions = () => {
 	)
 }
 
-export default RecentTransactions;
+export {RecentTransactions};

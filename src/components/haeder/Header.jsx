@@ -27,4 +27,4 @@ const Header = ({ items }) => {
 	)
 }
 
-export default Header;
+export {Header};

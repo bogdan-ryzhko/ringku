@@ -32,4 +32,4 @@ const MyWallet = () => {
 	);
 }
 
-export default MyWallet;
+export {MyWallet};

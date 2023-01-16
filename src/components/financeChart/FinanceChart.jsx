@@ -17,4 +17,4 @@ const FinanceChart = () => {
 	)
 }
 
-export default FinanceChart;
+export {FinanceChart};

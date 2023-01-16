@@ -1,10 +1,11 @@
 import { React, useState } from 'react';
-import AsideMenu from './components/aside/AsideMenu';
-import Header from './components/haeder/Header';
-import MyWallet from './components/myWallet/MyWallet';
-import MyCard from './components/myCard/MyCard';
-import FinanceChart from './components/financeChart/FinanceChart';
-import RecentTransactions from './components/recentTransactions/RecentTransactions';
+import {Routes, Route, Link} from 'react-router-dom';
+import {AsideMenu} from './components/aside/AsideMenu';
+import {Header} from './components/haeder/Header';
+import {MyWallet} from './components/myWallet/MyWallet';
+import {MyCard} from './components/myCard/MyCard';
+import {FinanceChart} from './components/financeChart/FinanceChart';
+import {RecentTransactions} from './components/recentTransactions/RecentTransactions';
 
 import "./styles/main.scss";
 
@@ -14,17 +15,29 @@ function App() {
 		{src: '../../images/header-img/header-item-2.svg', alt: 'expand to full screen', id: 2},
   ]);
 
+  const [asideItems, setAsideItems] = useState([
+		{menuItem: 'My Wallet', path: '../myWallet/MyWallet', id: 1},
+		{menuItem: 'My Card', path: '../myCard/MyCard', id: 2},
+		{menuItem: 'Finance Chart', path: '../financeChart/FinanceChart', id: 3},
+		{menuItem: 'Recent Transactions', path: '../recentTransactions/RecentTransactions', id: 4},
+	]);
+
+	const [userInfo, setUserInfo] = useState([
+		{name: 'Adrian', lastName: 'Tra', avatar: '../../images/aside-icons/avatar.png', id: 1}
+	]);
   return (
-    <div>
+    <>
       <div className="App">
         <AsideMenu />
         <Header items={headerItems} />
-        {/* <MyWallet/> */}
-        {/* <MyCard/> */}
-        {/* <FinanceChart /> */}
-        <RecentTransactions/>
+        <Routes>
+          <Route path='/my-wallet' element={<MyWallet/>}/>
+          <Route path='/my-card' element={<MyCard/>}/>
+          <Route path='/finance-chart' element={<FinanceChart/>}/>
+          <Route path='/recent-transactions' element={<RecentTransactions/>}/>
+        </Routes>
       </div>
-    </div>
+    </>
   )
 }
 
