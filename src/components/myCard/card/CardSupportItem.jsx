@@ -3,7 +3,7 @@ import React from "react";
 const CardSupportItem = ({ supportList }) => {
 	return (
 		<li className="card-support__item">
-			<p className="card-support__item-question">
+			<p style={{borderLeft: `4px solid${supportList.color}`}} className="card-support__item-question">
 				{supportList.question}
 			</p>
 			<button className="arrow-question">
