@@ -170,14 +170,24 @@
   letter-spacing: -0.01em;
 }
 
-.card-support__item + .card-support__item {
-  margin-top: 24px;
+.card-support__item {
+  position: relative;
 }
 
 .card-support__item-question {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 20px;
+}
+
+.card-support__item + .card-support__item {
+  margin-top: 24px;
+}
+
+.card-support__item-answer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .card-support__item-answer.card-support__item-answer--hidden {
