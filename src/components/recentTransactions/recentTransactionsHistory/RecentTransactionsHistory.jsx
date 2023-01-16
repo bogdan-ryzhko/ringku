@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TransactionsHistoryItemDesktop from "./TransactionsHistoryItemDesktop";
+import TransactionsHistoryItemDesktop from "./TransactionsHistoryItemDesctop";
 import TransactionsHistoryItemMobile from "./TransactionsHistoryItemMobile";
 import TransactionsListNames from "./TransactionsListNames";
 
@@ -44,11 +44,13 @@ const RecentTransactionsHistory = () => {
 						{transactionsList.map(transaction =>
 							<TransactionsHistoryItemDesktop transactionsList={transaction} key={transaction.id} />)}
 					</ul>
-					<button className="transactions-history__download">
-						Download the Excel File
-					</button>
 				</div>
 			</ul>
+			<div className="container">
+				<button className="transactions-history__download">
+					Download the Excel File
+				</button>
+			</div>
 		</section>
 	)
 }
