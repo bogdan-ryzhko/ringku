@@ -8,6 +8,9 @@ import {
 	PointElement,
 } from "chart.js";
 
+import dataIncome from "../../../dynamic-data/finance-chart/data-income.json";
+import dataIncomeOptions from "../../../dynamic-data/finance-chart/data-income-options.json";
+
 ChartJS.register(
 	LineElement,
 	CategoryScale,
@@ -16,28 +19,9 @@ ChartJS.register(
 )
 
 const FinanceIncomeBody = () => {
-	// console.log(LineElement)
-	const data = {
-		labels: ['Jan', 'Feb', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-		datasets: [
-			{
-				data: [1000, 1600, 600, 2000, 2400, 1400, 2400, 900, 2950, 1100, 200, 1600, 2750],
-				borderColor: '#4F46E5',
-			}
-		]
-	}
+	const data = dataIncome;
+	const options = dataIncomeOptions;
 
-	const options = {
-		plugins: {
-			legend: true
-		},
-		scales: {
-			y: {
-				min: 500,
-				max: 3000
-			}
-		}
-	}
 	return (
 		<div className="finance-income__body">
 			<Line

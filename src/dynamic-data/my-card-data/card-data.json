@@ -1,0 +1,14 @@
+[
+  {
+    "userName": "Adrian Tra",
+    "classCard": "Primary Card",
+    "cardImg": "../../../images/card-img/primary-card.png",
+    "paySystem": "../../../images/card-img/mastercard.svg",
+    "copyImg": "../../../images/card-img/copy-btn.svg",
+    "eyeImg": "../../../images/card-img/eye-btn.svg",
+    "cardNumber": "4889 9271 1937 1932",
+    "expiryDate": "12/28",
+    "cvv": 123,
+    "id": 1
+  }
+]

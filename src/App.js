@@ -5,26 +5,14 @@ import {Header} from './components/haeder/Header';
 import {MyWallet} from './components/myWallet/MyWallet';
 import {MyCard} from './components/myCard/MyCard';
 import {FinanceChart} from './components/financeChart/FinanceChart';
-import {RecentTransactions} from './components/recentTransactions/RecentTransactions';
+import { RecentTransactions } from './components/recentTransactions/RecentTransactions';
+import headerImages from "./dynamic-data/header/header-items.json";
 
 import "./styles/main.scss";
 
 function App() {
-  const [headerItems, setHeaderItems] = useState([
-		{src: '../../images/header-img/header-item-1.svg', alt: 'mobile-version', id: 1},
-		{src: '../../images/header-img/header-item-2.svg', alt: 'expand to full screen', id: 2},
-  ]);
+  const [headerItems, setHeaderItems] = useState(headerImages);
 
-  const [asideItems, setAsideItems] = useState([
-		{menuItem: 'My Wallet', path: '../myWallet/MyWallet', id: 1},
-		{menuItem: 'My Card', path: '../myCard/MyCard', id: 2},
-		{menuItem: 'Finance Chart', path: '../financeChart/FinanceChart', id: 3},
-		{menuItem: 'Recent Transactions', path: '../recentTransactions/RecentTransactions', id: 4},
-	]);
-
-	const [userInfo, setUserInfo] = useState([
-		{name: 'Adrian', lastName: 'Tra', avatar: '../../images/aside-icons/avatar.png', id: 1}
-	]);
   return (
     <>
       <div className="App">

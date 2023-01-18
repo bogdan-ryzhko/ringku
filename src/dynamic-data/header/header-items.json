@@ -1,0 +1,12 @@
+[
+  {
+    "src": "../../images/header-img/header-item-1.svg",
+    "alt": "mobile-version",
+    "id": 1
+  },
+  {
+    "src": "../../images/header-img/header-item-2.svg",
+    "alt": "expand to full screen",
+    "id": 2
+  }
+]

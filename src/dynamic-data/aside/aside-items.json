@@ -1,0 +1,22 @@
+[
+  {
+    "menuItem": "My Wallet",
+    "path": "../myWallet/MyWallet",
+    "id": 1
+  },
+  {
+    "menuItem": "My Card",
+    "path": "../myCard/MyCard",
+    "id": 2
+  },
+  {
+    "menuItem": "Finance Chart",
+    "path": "../financeChart/FinanceChart",
+    "id": 3
+  },
+  {
+    "menuItem": "Recent Transactions",
+    "path": "../recentTransactions/RecentTransactions",
+    "id": 4
+  }
+]

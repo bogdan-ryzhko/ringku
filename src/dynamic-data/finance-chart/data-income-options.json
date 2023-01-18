@@ -1,0 +1,11 @@
+{
+  "plugins": {
+    "legend": true
+  },
+  "scales": {
+    "y": {
+      "min": 500,
+      "max": 3000
+    }
+  }
+}

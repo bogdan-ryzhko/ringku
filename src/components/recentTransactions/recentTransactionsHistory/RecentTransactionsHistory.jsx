@@ -2,25 +2,12 @@ import React, { useState } from "react";
 import TransactionsHistoryItemDesktop from "./TransactionsHistoryItemDesctop";
 import TransactionsHistoryItemMobile from "./TransactionsHistoryItemMobile";
 import TransactionsListNames from "./TransactionsListNames";
+import transactionsItems from "../../../dynamic-data/recent-transactions/transactions-list.json";
+import transactionsTitles from "../../../dynamic-data/recent-transactions/transactions-names.json";
 
 const RecentTransactionsHistory = () => {
-
-	const [transactionsList, serTransactionsList] = useState([
-		{id: 962296152, color: '#2B825C', name: 'Sherman Blankenship', date: '08 Jan, 2022', status: 'Pending', amount: 217.90},
-		{id: 829892537, color: '#2B825C', name: 'Claudio Barrera', date: '06 Jan, 2022', status: 'Completed', amount: 329.90},
-		{id: 741560657, color: '#D1493D', name: 'Clifton Daniel', date: '03 Jan, 2022', status: 'Completed', amount: 217.90},
-		{id: 529040347, color: '#D1493D', name: 'Curt Boyer', date: '01 Jan, 2022', status: 'Completed', amount: 217.90},
-		{id: 398078341, color: '#D1493D', name: 'Jeff Proctor', date: '31 Dec, 2021', status: 'Completed', amount: 217.90},
-		{id: 197401837, color: '#2B825C', name: 'Rodger Fritz', date: '24 Dec, 2021', status: 'Completed', amount: 217.90},
-	]);
-
-	const [transactionNames, setTransactionNames] = useState([
-		{name: 'Transactions ID', id: 1,},
-		{name: 'Name', id: 2,},
-		{name: 'Date', id: 3,},
-		{name: 'Status', id: 4,},
-		{name: 'Amount', id: 5,},
-	])
+	const [transactionsList, serTransactionsList] = useState(transactionsItems);
+	const [transactionNames, setTransactionNames] = useState(transactionsTitles);
 
 	return (
 		<section className="section__transactions-history">

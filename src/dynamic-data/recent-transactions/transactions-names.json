@@ -1,0 +1,7 @@
+[
+  { "name": "Transactions ID", "id": 1 },
+  { "name": "Name", "id": 2 },
+  { "name": "Date", "id": 3 },
+  { "name": "Status", "id": 4 },
+  { "name": "Amount", "id": 5 }
+]
