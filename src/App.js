@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <AsideMenu />
+        <AsideMenu  />
         <Header items={headerItems} />
         <Routes>
           <Route path='/my-wallet' element={<MyWallet/>}/>

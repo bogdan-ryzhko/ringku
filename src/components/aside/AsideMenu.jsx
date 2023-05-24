@@ -10,7 +10,6 @@ const AsideMenu = () => {
 		{menuItem: 'Finance Chart', path: '/finance-chart', id: 3},
 		{menuItem: 'Recent Transactions', path: '/recent-transactions', id: 4},
 	]);
-
 	const [userInfo, setUserInfo] = useState([
 		{name: 'Adrian', lastName: 'Tra', avatar: '../../images/aside-icons/avatar.png', id: 1}
 	]);
