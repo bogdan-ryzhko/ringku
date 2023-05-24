@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useEffect, useState } from 'react';
 import {Routes, Route, Link} from 'react-router-dom';
 import {AsideMenu} from './components/aside/AsideMenu';
 import {Header} from './components/haeder/Header';
@@ -12,6 +12,12 @@ import "./styles/main.scss";
 
 function App() {
   const [headerItems, setHeaderItems] = useState(headerImages);
+
+  useEffect(() => {
+    fetch("https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json&valcode=USD")
+      .then(res => res.json())
+      .then(data => console.log(data));
+  }, []);
 
   return (
     <>
